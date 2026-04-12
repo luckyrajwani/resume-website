@@ -13,62 +13,50 @@
 
         .container {
             width: 500px;
-            margin: 50px auto;
+            margin: 80px auto;
             background: #fff;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
         h1 {
-            text-align: center;
             color: #2c3e50;
+            margin-bottom: 20px;
         }
 
-        label {
-            display: block;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        textarea {
-            height: 100px;
-        }
-
-        button {
-            margin-top: 20px;
-            width: 100%;
-            padding: 12px;
-            background: #3498db;
-            color: white;
-            border: none;
-            border-radius: 5px;
+        .contact-item {
+            margin: 15px 0;
             font-size: 16px;
-            cursor: pointer;
+            color: #333;
         }
 
-        button:hover {
-            background: #2980b9;
-        }
-
-        .info {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 14px;
-            color: #555;
+        .contact-item span {
+            font-weight: bold;
+            color: #2c3e50;
         }
 
         a {
             color: #3498db;
             text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #2980b9;
         }
     </style>
 </head>
@@ -78,23 +66,29 @@
 <div class="container">
     <h1>Contact Me</h1>
 
-    <form>
-        <label>Name</label>
-        <input type="text" placeholder="Enter your name" required>
-
-        <label>Email</label>
-        <input type="email" placeholder="Enter your email" required>
-
-        <label>Message</label>
-        <textarea placeholder="Write your message..." required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-
-    <div class="info">
-        <p>📧 lokesh.s.rajwani@gmail.com</p>
-        <p>🔗 <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+    <div class="contact-item">
+        <span>📍 Location:</span> Bengaluru, India
     </div>
+
+    <div class="contact-item">
+        <span>📞 Phone:</span> +91 8437162448
+    </div>
+
+    <div class="contact-item">
+        <span>📧 Email:</span> 
+        <a href="mailto:lokesh.s.rajwani@gmail.com">
+            lokesh.s.rajwani@gmail.com
+        </a>
+    </div>
+
+    <div class="contact-item">
+        <span>🔗 LinkedIn:</span> 
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">
+            linkedin.com/in/yourprofile
+        </a>
+    </div>
+
+    <a href="index.html" class="btn">⬅ Back to Home</a>
 </div>
 
 </body>
