@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Video Website</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      background: #202020;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .title {
+      margin-top: 20px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .description {
+      margin-top: 10px;
+      color: #cccccc;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    My Video Platform
+  </div>
+
+  <div class="container">
+
+    <div class="video-wrapper">
+      <iframe
+        src="<iframe width="560" height="315" src="https://www.youtube.com/embed/GG1_DsScm6U?si=VvIlEPsQwdxC2MvG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="title">
+      My Awesome Video
+    </div>
+
+    <div class="description">
+      This is my custom website showing a YouTube video.
+      You can replace this text with your own description.
+    </div>
+
+  </div>
+
+</body>
+</html>
